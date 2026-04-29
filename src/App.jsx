@@ -27,7 +27,7 @@ const StudentRow = ({ student, index, onUpdateScore, onDeleteStudent }) => {
         <div className="student-info">
           <h3 className="student-name">{student.name}</h3>
           <span className={`status-badge ${isPassed ? 'status-pass' : 'status-fail'}`}>
-            {isPassed ? '✓ PASS' : '✗ FAIL'}
+            {isPassed ? 'PASS' : 'FAIL'}
           </span>
         </div>
       </div>
@@ -63,7 +63,7 @@ const StudentTable = ({ students, onUpdateScore, onDeleteStudent }) => (
   <div className="student-table">
     <div className="table-header">
       <div className="header-left">
-        <h2 className="section-title">📊 Student Records</h2>
+        <h2 className="section-title"> Student Records</h2>
         <p className="record-count">{students.length} entries</p>
       </div>
     </div>
